@@ -1,7 +1,9 @@
 # MousePlayback - in development
 Records your mouse movement and keystrokes and plays them back
 
-![](https://imgur.com/ja52cVs.png)
+![](https://imgur.com/6cVc8s2.png)
+
+You can install MousePlayback by downloading the installer and running it. ([Setup.msi](https://github.com/Stefangansevles/MousePlayback/blob/master/Setup.msi))
 
 # Features
 
