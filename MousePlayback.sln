@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MousePlayback", "MousePlayback\MousePlayback.csproj", "{503380B2-51A6-468C-84B8-7B9EBC052BFE}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{216451E3-049C-43DA-9739-85F91D45BD84}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{503380B2-51A6-468C-84B8-7B9EBC052BFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{503380B2-51A6-468C-84B8-7B9EBC052BFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{503380B2-51A6-468C-84B8-7B9EBC052BFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{503380B2-51A6-468C-84B8-7B9EBC052BFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{216451E3-049C-43DA-9739-85F91D45BD84}.Debug|Any CPU.ActiveCfg = Debug
+		{216451E3-049C-43DA-9739-85F91D45BD84}.Debug|Any CPU.Build.0 = Debug
+		{216451E3-049C-43DA-9739-85F91D45BD84}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CD45044A-261E-48A8-9D2D-310D319B7342}
+	EndGlobalSection
+EndGlobal
