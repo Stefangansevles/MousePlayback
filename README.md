@@ -1,5 +1,10 @@
-# MousePlayback - in development
-Records your mouse movement and keystrokes and plays them back
+# MousePlayback
+MousePlayback is an Windows Forms application that records your mouse- and keyboard clicks/movements after you press record, and plays them back when you press play.
+
+You can use the buttons for this, or hotkeys. Default:
+
+* F1: Start and stop recording
+* F2: Start and stop playing back the recording
 
 ![](https://imgur.com/6cVc8s2.png)
 
