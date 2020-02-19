@@ -12,6 +12,7 @@ Records your mouse movement and keystrokes and plays them back
 * Shortcut keys for recording / playing (Default: F1 / F2 )
 * Export functionality
 * Import functionality
+* Full playback of all mouse and keyboard actions done while recording
 
 ----
 
