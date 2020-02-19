@@ -1,7 +1,15 @@
-# MousePlayback - in development
-Records your mouse movement and keystrokes and plays them back
+# MousePlayback
 
-![](https://imgur.com/ja52cVs.png)
+![](https://imgur.com/6cVc8s2.png)
+
+MousePlayback is an Windows Forms application that records your mouse- and keyboard clicks/movements after you press record, and plays them back when you press play.
+
+You can use the buttons for this, or hotkeys. Default:
+
+* F1: Start and stop recording
+* F2: Start and stop playing back the recording
+
+You can install MousePlayback by downloading the installer and running it. ([Setup.msi](https://github.com/Stefangansevles/MousePlayback/raw/master/Setup.msi))
 
 # Features
 
@@ -26,4 +34,4 @@ Entity Framework
 
 [Materialskin (Design of the application)](https://github.com/donaldsteele/MaterialSkin)
 
-[Bunifu Framework (Buttons)](https://bunifuframework.com/)
+[Bunifu Framework (3 Buttons)](https://bunifuframework.com/)
