@@ -2,3 +2,7 @@
 
 V1.0.1
 Fixed an issue where exporting a playback didn't work
+
+V1.0.2
+You can now move the mouse during playback when the mouse wasn't being moved during that part of the recording(for example if you are typing and not moving the mouse)
+previously it would hold the mouse on the location you left it at while typing

@@ -152,7 +152,7 @@ namespace MousePlayback
                     || e.KeyCode == Keys.Menu || e.KeyCode == Keys.Control || e.KeyCode == Keys.ControlKey || e.KeyCode == Keys.Shift || e.KeyCode == Keys.ShiftKey)
                     return;
                                
-                actions.Add(new Action(actions.Count, Cursor.Position.X, Cursor.Position.Y, 0, DateTime.Now, ActionType.KEY_DOWN, (VirtualKeyCode)e.KeyCode, GetWinModifiers()));                
+                actions.Add(new Action(actions.Count, null,null, 0, DateTime.Now, ActionType.KEY_DOWN, (VirtualKeyCode)e.KeyCode, GetWinModifiers()));                
             }
         }
         
@@ -365,23 +365,24 @@ namespace MousePlayback
 
             //Move mouse
             #region move mouse
-            if (cbRandomizeInput.Checked)
+            if (cbRandomizeInput.Checked && a.X.HasValue)
             {
                 //move the mouse differently a little bit
                 if (random.NextDouble() >= 0.5)
                 {
                     if (random.NextDouble() >= 0.5)
-                        SetCursorPos((a.X + random.Next(0, (int)numPixels.Value)), a.Y);
+                        SetCursorPos((a.X.Value + random.Next(0, (int)numPixels.Value)), a.Y.Value);
+
                     else
-                        SetCursorPos(a.X, a.Y + random.Next(0, (int)numPixels.Value));
+                        SetCursorPos(a.X.Value, a.Y.Value + random.Next(0, (int)numPixels.Value));
                 }
                 else
-                    SetCursorPos(a.X, a.Y);
+                    SetCursorPos(a.X.Value, a.Y.Value);
 
             }
-            else //No random, just repeat mouse movements
+            else if(a.X.HasValue)//No random, just repeat mouse movements
             {
-                SetCursorPos(a.X, a.Y);
+                SetCursorPos(a.X.Value, a.Y.Value);
             }
             #endregion
 

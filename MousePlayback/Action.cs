@@ -26,7 +26,7 @@ namespace MousePlayback
         /// <param name="type">The type of action. See ActionType enumeration</param>
         /// <param name="key">The key to press for this action</param>
         /// <param name="modifiers">The modifiers (ctrl/alt/shift) to hold down during this action</param>
-        public Action(int id, int x, int y, int scrollAmount, DateTime timestamp, ActionType type, VirtualKeyCode key = VirtualKeyCode.NONAME, KeyModifiers modifiers = new KeyModifiers())
+        public Action(int id, int? x, int? y, int scrollAmount, DateTime timestamp, ActionType type, VirtualKeyCode key = VirtualKeyCode.NONAME, KeyModifiers modifiers = new KeyModifiers())
         {
             ID = id;
             X = x;
@@ -43,11 +43,11 @@ namespace MousePlayback
         /// <summary>
         /// X Coördinate of the mouse cursor
         /// </summary>
-        public int X { get; }
+        public int? X { get; }
         /// <summary>
         /// Y Coördinate of the mouse cursor
         /// </summary>
-        public int Y { get; }
+        public int? Y { get; }
         /// <summary>
         /// Amount of scroll actions to scroll. 0 if ActionType is not WHEEL
         /// </summary>
